@@ -1,0 +1,83 @@
+.group-accordion {
+  margin-top: 20px;
+}
+
+.group-item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.group-header {
+  padding: 10px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group-header:hover {
+  background-color: #e0e0e0;
+}
+
+.group-actions {
+  display: flex;
+  gap: 10px; /* Add space between buttons */
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+.group-content {
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Specific styles for delete buttons */
+.delete-feature-button,
+.delete-group-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delete-feature-button:hover,
+.delete-group-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Flexbox container for each feature and its delete button */
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.feature-container:last-child {
+  border-bottom: none;
+}
+
+/* Style adjustments for buttons on the right */
+.add-feature-button,
+.delete-group-button {
+  margin-left: 10px;
+}

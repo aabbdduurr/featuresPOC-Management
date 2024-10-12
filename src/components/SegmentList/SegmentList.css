@@ -1,0 +1,94 @@
+.segment-list {
+  margin-top: 10px;
+}
+
+.segment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.segment-table th,
+.segment-table td {
+  border: 1px solid #ddd;
+  padding: 12px 8px;
+}
+
+.segment-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.segment-info div {
+  margin-bottom: 5px;
+}
+
+.rollout-content {
+  display: flex;
+  align-items: center;
+}
+
+.rollout-slider-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.rollout-slider {
+  width: 80px;
+  margin-right: 5px;
+}
+
+.rollout-percentage {
+  margin-right: 10px;
+}
+
+.secondary-value {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.actions-column {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+}
+
+.edit-segment-button,
+.delete-segment-button,
+.move-segment-button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  width: 80px;
+}
+
+.edit-segment-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.delete-segment-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.move-segment-button {
+  background-color: #2196f3;
+  color: white;
+  width: 40px; /* Smaller width for up/down arrows */
+}
+
+.edit-segment-button:hover {
+  background-color: #45a049;
+}
+
+.delete-segment-button:hover {
+  background-color: #d32f2f;
+}
+
+.move-segment-button:hover {
+  background-color: #1976d2;
+}

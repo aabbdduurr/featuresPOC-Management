@@ -1,0 +1,80 @@
+/* LogModal.css */
+
+.log-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensures it appears above other content */
+}
+
+.log-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+  overflow-y: auto; /* Scrollable content if it's too long */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Allows positioning of close button */
+}
+
+.log-modal h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background-color: #e04e4e;
+}
+
+.log-list {
+  margin-top: 20px;
+}
+
+.log-item p {
+  margin: 5px 0;
+}
+
+.log-item strong {
+  color: #333;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.loading {
+  text-align: center;
+}

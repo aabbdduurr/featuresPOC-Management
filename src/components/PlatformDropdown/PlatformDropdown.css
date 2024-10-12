@@ -1,0 +1,10 @@
+.platform-dropdown select {
+  padding: 8px;
+  font-size: 16px;
+  margin: 10px 0;
+  width: 200px;
+}
+
+.platform-dropdown .error {
+  color: red;
+}
