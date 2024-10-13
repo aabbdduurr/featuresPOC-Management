@@ -42,6 +42,12 @@ Token is a signed JWT with the following payload:
 
 The secret is `togglePOC`. You can change this in the Lambda function.
 
+## Usage
+
+Simply install the dependencies and run the application. The interface is self-explanatory and easy to use.
+
+- `npm start` - Start the application
+
 ## License
 
 Use it as you like. No restrictions.
