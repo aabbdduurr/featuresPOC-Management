@@ -1,0 +1,140 @@
+/* Create Platform Modal Styles */
+
+.create-platform-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 500px;
+}
+
+.platform-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.platform-field-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.platform-field-row .form-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.platform-field-row .form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.platform-field-row .form-input:disabled {
+  background-color: #f9fafb;
+  cursor: not-allowed;
+}
+
+.add-platform-btn {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-label-note {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.validation-errors {
+  padding: 12px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  margin: -8px 0 8px 0;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.error-message:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.form-note {
+  padding: 16px;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.form-note p {
+  margin: 0 0 8px 0;
+  color: #0c4a6e;
+  font-weight: 600;
+}
+
+.form-note ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #075985;
+}
+
+.form-note li {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.form-note li:last-child {
+  margin-bottom: 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .create-platform-form {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .platform-field-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .form-note {
+    font-size: 12px;
+  }
+}

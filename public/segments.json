@@ -1,0 +1,18 @@
+{
+  "user-tier": {
+    "description": "User subscription tiers",
+    "values": ["free", "premium", "enterprise", "trial"]
+  },
+  "region": {
+    "description": "Geographic regions", 
+    "values": ["us-east", "us-west", "eu-west", "asia-pacific", "canada"]
+  },
+  "device-type": {
+    "description": "Device categories",
+    "values": ["phone", "tablet", "desktop", "tv"]
+  },
+  "environment": {
+    "description": "Environment types",
+    "values": ["development", "staging", "production", "test"]
+  }
+}

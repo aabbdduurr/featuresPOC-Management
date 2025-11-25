@@ -1,0 +1,294 @@
+/* Segment List Styles */
+
+.segment-list {
+  margin-top: 1rem;
+}
+
+.segment-list h3 {
+  margin: 0 0 1rem 0;
+  color: #374151;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.no-segments {
+  color: #6b7280;
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+  background: #f9fafb;
+  border: 2px dashed #d1d5db;
+  border-radius: 6px;
+}
+
+/* Table Styles */
+.segment-table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: white;
+}
+
+.segment-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.segment-table th {
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  white-space: nowrap;
+}
+
+.segment-table td {
+  border-bottom: 1px solid #f3f4f6;
+  padding: 1rem 0.75rem;
+  vertical-align: top;
+}
+
+.segment-table tr:last-child td {
+  border-bottom: none;
+}
+
+.segment-table tr:hover {
+  background: #f9fafb;
+}
+
+/* Segment Conditions */
+.segment-conditions {
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.condition-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.375rem 0.5rem;
+  background: #f3f4f6;
+  border-radius: 4px;
+}
+
+.condition-row:last-child {
+  margin-bottom: 0;
+}
+
+.condition-type {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.8125rem;
+}
+
+.condition-operator {
+  background: #3b82f6;
+  color: white;
+  padding: 0.125rem 0.375rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.condition-values {
+  color: #6b7280;
+  font-size: 0.8125rem;
+  flex: 1;
+}
+
+/* Segment Value */
+.segment-value {
+  min-width: 100px;
+}
+
+.value-display {
+  font-family: 'Courier New', monospace;
+  background: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.8125rem;
+  color: #374151;
+}
+
+/* Segment Rollout */
+.segment-rollout {
+  min-width: 150px;
+}
+
+.rollout-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rollout-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rollout-bar {
+  flex: 1;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.rollout-progress {
+  height: 100%;
+  background: #10b981;
+  transition: width 0.3s ease;
+}
+
+.rollout-percentage {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #374151;
+  min-width: 35px;
+}
+
+.rollout-secondary {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.no-rollout {
+  color: #9ca3af;
+  font-style: italic;
+  font-size: 0.8125rem;
+}
+
+/* Segment Actions */
+.segment-actions {
+  min-width: 140px;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.move-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  margin-left: 0.25rem;
+}
+
+.move-buttons .btn {
+  padding: 0.125rem 0.25rem;
+  font-size: 0.75rem;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .segment-table-container {
+    font-size: 0.8125rem;
+  }
+
+  .segment-table th,
+  .segment-table td {
+    padding: 0.625rem 0.5rem;
+  }
+
+  .condition-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .move-buttons {
+    flex-direction: row;
+    gap: 0.125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .segment-table-container {
+    border: none;
+    border-radius: 0;
+  }
+
+  .segment-table {
+    border: none;
+  }
+
+  .segment-table,
+  .segment-table thead,
+  .segment-table tbody,
+  .segment-table th,
+  .segment-table td,
+  .segment-table tr {
+    display: block;
+  }
+
+  .segment-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .segment-table tr {
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: white;
+  }
+
+  .segment-table td {
+    border: none;
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 30%;
+  }
+
+  .segment-table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 25%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: 600;
+    color: #374151;
+  }
+
+  .segment-conditions:before {
+    content: 'Conditions:';
+  }
+
+  .segment-value:before {
+    content: 'Value:';
+  }
+
+  .segment-rollout:before {
+    content: 'Rollout:';
+  }
+
+  .segment-actions:before {
+    content: 'Actions:';
+  }
+
+  .action-buttons {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
