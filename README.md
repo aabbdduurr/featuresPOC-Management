@@ -1,6 +1,6 @@
 # Feature Management System
 
-A modern, scalable React application for managing feature flags and toggles across multiple platforms. Built with TypeScript, clean architecture principles, and comprehensive testing.
+A React application for managing feature flags and toggles across multiple platforms. Built with TypeScript, clean architecture principles, and comprehensive testing.
 
 ## Architecture Overview
 
@@ -27,18 +27,11 @@ src/
     └── container/       # Dependency injection container
 ```
 
-### Key Architectural Benefits
-
-- **Dependency Inversion**: High-level modules don't depend on low-level modules
-- **Single Responsibility**: Each class/module has one reason to change
-- **Open/Closed**: Open for extension, closed for modification
-- **Interface Segregation**: Clients depend only on interfaces they use
-- **Testability**: Easy to mock dependencies and test in isolation
-
 ## Features
 
 ### Core Functionality
 - Platform management (Web, Mobile, API)
+- Segment management
 - Feature group organization
 - Feature flag creation and management
 - Segment-based feature targeting
